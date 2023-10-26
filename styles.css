@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px 50px;
+}
+
+button {
+    margin-bottom: 30px;
+}
