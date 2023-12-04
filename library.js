@@ -1,18 +1,20 @@
 const Library = [];
 
-function Book(title, author, length, read) {
-    this.title = title;
-    this.author = author;
-    this.length = length;
-    this.read = read;
-}
+class Book {
+    constructor(title, author, length, read){
+        this.title = title;
+        this.author = author;
+        this.length = length;
+        this.read = read;
+    }
 
-Book.prototype.addBookToLibrary = function() {
-    Library.push(this);
-}
+    addBookToLibrary = () => {
+        Library.push(this);
+    }
 
-Book.prototype.changeRead = function() {
-    this.read = !this.read;
+    changeRead = () => {
+        this.read = !this.read;
+    }
 }
 
 function addBook(title, author, length) {
